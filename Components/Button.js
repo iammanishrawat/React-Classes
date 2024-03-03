@@ -1,6 +1,6 @@
-const Button = ({imageUrl, buttonName}) => {
+const Button = ({imageUrl, buttonName, clickHandler}) => {
   return (
-    <button type="button" title={buttonName} className="counter-button">
+    <button type="button" title={buttonName} className="counter-button" onClick={clickHandler}>
         <img src={imageUrl} alt={buttonName} />
     </button>
   )
